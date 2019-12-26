@@ -89,7 +89,8 @@ $(document).ready(function() {
           success: function(){
            $(form)[0].reset();
            //$(form).html('<p class="modal-answer__text">Спасибо! Заявка успешно отправлена. Наш менеджер перезвонит Вам в течение 15 минут.</p>');
-           modalA.toggleClass('modal-answer--visible');
+           modal.removeClass('modal--visible'); // закрывает модальное окно modal--visible
+           modalA.toggleClass('modal-answer--visible'); // открывает/вызывает модальное окно modal-answer--visible
           },
           error: function(jqXHR, textStatus) {
             console.error(jqXHR + " " + textStatus);

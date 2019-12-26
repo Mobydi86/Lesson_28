@@ -395,11 +395,13 @@ template {
 li {
   list-style-type: none; }
 
-label.invalid {
+div.invalid {
   color: tomato; }
 
-input.invalid {
-  border-bottom: 1px solid tomato; }
+input {
+  outline: none; }
+  input.invalid {
+    border-bottom: 1px solid tomato; }
 
 .container {
   width: 85%;
