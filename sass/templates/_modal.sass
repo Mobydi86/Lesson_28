@@ -1,0 +1,95 @@
+.modal-answer
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  z-index: 199
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: rgba($dark, 0.6)
+  display: flex
+  align-items: center
+  justify-content: center
+  &--visible
+    opacity: 1
+    visibility: visible
+  &__dialog
+    font-size: 1.5rem
+    position: relative
+    max-width: 46.36rem
+    background: $dark url('../img/bg-lines.svg') no-repeat center
+    padding: 2.357rem 3.5rem 1.928rem
+    color: $light
+  &__close
+    position: absolute
+    right: 0
+    top: 0
+    width: 28px
+    height: 28px
+    background: transparent url('../img/close.svg') no-repeat center
+    border: none
+    margin: 12px
+    cursor: pointer
+.modal
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  z-index: 199
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: rgba($dark, 0.6)
+  display: flex
+  align-items: center
+  justify-content: center
+  &--visible
+    opacity: 1
+    visibility: visible
+  &__dialog
+    position: relative
+    max-width: 36.36rem
+    background: $dark url('../img/bg-lines.svg') no-repeat center
+    padding: 2.357rem 3.5rem 1.928rem
+    color: $light
+  &__close
+    position: absolute
+    right: 0
+    top: 0
+    width: 28px
+    height: 28px
+    background: transparent url('../img/close.svg') no-repeat center
+    border: none
+    margin: 12px
+    cursor: pointer
+  &__title
+    font-family: 'Yeseva One', cursive
+    font-size: 1.357rem
+    line-height: 1.857rem
+    text-align: center
+    margin: 0
+    margin-bottom: 1.928rem
+  &__form
+    display: flex
+    flex-direction: column
+  &__input
+    &-group
+      display: flex
+      flex-direction: column
+      margin-bottom: 3.228rem
+    &:last-of-type
+      margin-bottom: 1.2rem
+  &__policy
+    font-size: 1.143rem
+    margin-bottom: 2.7rem
+  &__button
+    align-self: flex-end
+    font-family: 'Futura Demi', cursive
+    font-size: 0.929rem
+    padding: 1.257rem 3.271rem 1.457rem 3.171rem
+    margin-right: 0.35rem

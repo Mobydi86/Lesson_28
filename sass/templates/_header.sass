@@ -1,0 +1,41 @@
+.header
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 99
+  background-color: $dark
+  padding: 24px 0
+.menu
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__logo
+    flex-basis: 14.331%
+  &__nav
+    flex-basis: 43.153%
+  &__contacts
+    flex-basis: 26.433%  
+.logo
+  color: $primary
+  text-transform: uppercase
+.nav
+  display: flex
+  justify-content: space-between
+  &__item
+    color: $light
+    text-decoration: none
+    text-transform: uppercase
+    transition: color 0.3s
+    &:hover
+      color: $primary
+.phone
+  color: $primary
+.contacts
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__phone
+    transition: color 0.3s
+    &:hover
+      color: $light  

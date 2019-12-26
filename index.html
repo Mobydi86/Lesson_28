@@ -1,0 +1,595 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson28 Тестирование и оптимизация вёрстки</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="menu">
+          <div class="logo menu__logo">Repair Design Project</div>
+          <nav class="nav menu__nav">
+            <a href="#" class="nav__item">Главная</a>
+            <a href="#" class="nav__item">Проекты</a>
+            <a href="#" class="nav__item">Замер</a>
+            <a href="#" class="nav__item">Команда</a>
+            <a href="#" class="nav__item">Отзывы</a>
+            <a href="#" class="nav__item">Контакты</a>
+          </nav>
+          <div class="contacts menu__contacts">
+            <a href="tel:+79997683299" class="phone contacts__phone"
+              >+7 (999) 768-32-99</a
+            >
+            <button class="button contacts__button button--primary" data-toggle="modal">
+              Заказать звонок
+            </button>  
+          </div>
+        </div>
+        <!-- /.menu -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <main>
+      <section class="hero">
+        <div class="instagram hero__instagram">
+            <a href="#" class="instagram__link">Instagram</a>
+        </div>
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="title hero__title wow fadeInUp">Турецкий ремонт 
+            <p class="p__title">в&nbsp;<span class="title--primary">Ростове-на-дону</span></p></h1>
+            <p class="hero__text wow fadeInUp">
+              Получите готовый ремонт под ключ в срок с экономией рабочего
+              времени до 45 дней и 20% от стоимости материалов за счет
+              организации работы
+            </p>
+            <button class="button hero__button button--primary wow pulse" data-toggle="modal" data-wow-delay="0.5s">
+              Рассчитать стоимость
+            </button>
+            <button class="button hero__button button--outline wow wobble" data-wow-delay="0.5s">
+              Отправить заявку
+            </button>
+          </div>
+          <!-- /.hero__content -->
+        </div>
+        <!-- /.container -->
+        <a href="#" class="hero__scroll-down">листайте вниз</a>
+      </section>
+      <!-- /.hero -->
+
+      <section class="section section--dark projects">
+        <div class="container">
+          <div class="section-title section-title--left wow fadeInLeft">
+            <h2
+              class="section-title__heading section-title__heading--primary section-title__heading--big"
+            >
+              Завершенные <span class="section-title__word">проекты</span>
+            </h2>
+            <p class="section-title__text">
+              На сайте представлена ​​лишь небольшая часть работ, выполняемых
+              нашей компанией. За 14 лет работы на строительном рынке мы
+              осчастливили более 1000 семей
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-45">
+              <!-- Slider main container -->
+              <div class="projects__swiper-container swiper-container">
+                <!-- Additional required wrapper -->
+                <div
+                  class="swiper-wrapper swiper-wrapper_center swiper-no-swiping"
+                >
+                  <!-- Slides -->
+                  <div class="projects__swiper-slide swiper-slide">
+                    <div class="swiper-slide__text">
+                      <h3 class="swiper-slide__heading">Город:</h3>
+                      <span class="swiper-slide__value"
+                        >Ростов-на-Дону <br />ЖК Адмирал</span
+                      >
+                    </div>
+                    <!-- /.swiper-slide__text -->
+                    <div class="swiper-slide__text">
+                      <h3 class="swiper-slide__heading">Площадь:</h3>
+                      <span class="swiper-slide__value">81 м<sup>2</sup></span>
+                    </div>
+                    <!-- /.swiper-slide__text -->
+                    <div class="swiper-slide__text">
+                      <h3 class="swiper-slide__heading">Срок ремонта:</h3>
+                      <span class="swiper-slide__value">3,5 месяца</span>
+                    </div>
+                    <!-- /.swiper-slide__text -->
+                    <div class="swiper-slide__text">
+                      <h3 class="swiper-slide__heading">Стоимость:</h3>
+                      <span class="swiper-slide__value">По запросу</span>
+                    </div>
+                    <!-- /.swiper-slide__text -->
+                  </div>
+                  <div class="projects__swiper-slide swiper-slide">
+                    <div class="swiper-slide__text">
+                      <h3 class="swiper-slide__heading">Город:</h3>
+                      <span class="swiper-slide__value"
+                        >Ростов-на-Дону <br />ЖК Адмирал</span
+                      >
+                    </div>
+                    <!-- /.swiper-slide__text -->
+                    <div class="swiper-slide__text">
+                      <h3 class="swiper-slide__heading">Площадь:</h3>
+                      <span class="swiper-slide__value">90 м<sup>2</sup></span>
+                    </div>
+                    <!-- /.swiper-slide__text -->
+                    <div class="swiper-slide__text">
+                      <h3 class="swiper-slide__heading">Срок ремонта:</h3>
+                      <span class="swiper-slide__value">4,5 месяца</span>
+                    </div>
+                    <!-- /.swiper-slide__text -->
+                    <div class="swiper-slide__text">
+                      <h3 class="swiper-slide__heading">Стоимость:</h3>
+                      <span class="swiper-slide__value">По запросу</span>
+                    </div>
+                    <!-- /.swiper-slide__text -->
+                  </div>
+                  <div class="projects__swiper-slide swiper-slide">
+                    <div class="swiper-slide__text">
+                      <h3 class="swiper-slide__heading">Город:</h3>
+                      <span class="swiper-slide__value"
+                        >Ростов-на-Дону <br />ЖК Адмирал</span
+                      >
+                    </div>
+                    <!-- /.swiper-slide__text -->
+                    <div class="swiper-slide__text">
+                      <h3 class="swiper-slide__heading">Площадь:</h3>
+                      <span class="swiper-slide__value">110 м<sup>2</sup></span>
+                    </div>
+                    <!-- /.swiper-slide__text -->
+                    <div class="swiper-slide__text">
+                      <h3 class="swiper-slide__heading">Срок ремонта:</h3>
+                      <span class="swiper-slide__value">5 месяца</span>
+                    </div>
+                    <!-- /.swiper-slide__text -->
+                    <div class="swiper-slide__text">
+                      <h3 class="swiper-slide__heading">Стоимость:</h3>
+                      <span class="swiper-slide__value">По запросу</span>
+                    </div>
+                    <!-- /.swiper-slide__text -->
+                  </div>
+                </div>
+  
+                <!-- If we need navigation buttons -->
+                <div
+                  class="projects__swiper-button-prev swiper-button-prev"
+                ></div>
+                <!-- If we need pagination -->
+                <div class="projects__swiper-pagination swiper-pagination"></div>
+                <div
+                  class="projects__swiper-button-next swiper-button-next"
+                ></div>
+              </div>
+            </div>
+            <!-- /.col-50 -->
+            <div class="col-55 mobile-order-top photo">
+              <div
+                class="swiper-container projects__swiper-container projects__swiper-container_mt-15"
+              >
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper swiper-no-swiping">
+                  <!-- Slides -->
+                  <div class="photo__swiper-slide swiper-slide">
+                    <img src="./img/projects/projects-1.jpg" alt="" />
+                  </div>
+                  <div class="photo__swiper-slide swiper-slide">
+                    <img src="./img/projects/projects-2.jpg" alt="" />
+                  </div>
+                  <div class="photo__swiper-slide swiper-slide">
+                    <img src="./img/projects/projects-3.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-50 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section projects -->
+
+      <section class="section control">
+        <div class="container">
+          <div class="section-title control__section-title section-title--light">
+            <h2 class="section-title__heading wow fadeInUp">Онлайн контроль</h2>
+            <!-- /.section-title__heading -->
+            <div class="section-title__image">
+              <img src="img/video.svg" alt="video">
+            </div>
+            <!-- /.section-title__image -->
+          </div>
+          <!-- /.section-title -->
+          <div class="control__video video">
+            <img src="img/video-mask.jpg" alt="video mask" class="video__mask wow bounceOut">
+            <img src="img/play-icon.svg" alt="play icon" class="video__icon">
+          </div>
+          <!-- /.control__video video -->
+          <p class="control__text">
+            На каждом объекте установлена ​​камера, которая транслирует ход
+            работы на часах. В любой момент вы можете зайти на наш сайт и
+            следить за ходом работы в вашей квартире. Посмотрите прямую
+            трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы
+            получить ссылку на трансляцию.
+          </p>
+          <!-- /.control__text action="send.php"-->
+          <form method="POST" id="control-form" class="form control__form">
+            <div class="control__input-name">
+              <label for="user-name" class="label form__label control__label">Имя</label>
+              <input type="text" name="userName" class="input form__input control__input input--dark" id="control-user-name" placeholder="Как вас зовут:">
+            </div>
+            <div class="control__input-phone">
+              <label for="user-phone" class="label form__label control__label">Телефон</label>
+              <input type="tel" name="userPhone" class="input form__input control__input input--dark" id="control-user-phone" placeholder="Ваш номер телефона:">
+            </div>
+
+            <button class="button control__button button--primary__little">Отправить</button>
+            <div class="policy control__policy"> <!--  -->
+              <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
+              <label for="policy-checkbox" class="policy__label control__policy-label">я соглашаюсь с обработкой данных</label>
+            </div>
+            <!-- /.policy -->
+          </form>
+          <!-- /.form control__form -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section control -->
+      <section class="section types">
+        <div class="container">
+            <div class="section-title types__section-title wow fadeInUp">
+                <h2 class="section-title__heading">Виды ремонта</h2>
+                <!-- /.section-title__heading -->
+                <div class="section-title__image">
+                  <img src="img/repair.svg" alt="repair">
+                </div>
+                <!-- /.section-title__image -->
+              </div>
+              <!-- /.section-title -->
+              <div class="row">
+                <div class="col-30">
+                  <div class="card types__card">
+                    <img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__image">
+                    <div class="card__text">
+                      <h3 class="card__title card__maxmargin">Косметический ремонт</h3>
+                      <!-- /.card__title -->
+                      <ul class="card__list card__maxmargin">
+                        <li class="card__item">• Демонтаж старых покрытий</li>
+                        <!-- /.card__item -->
+                        <li class="card__item">• Поклейка обоев</li>
+                        <!-- /.card__item -->
+                        <li class="card__item">• Роспись стен и потолков</li>
+                        <!-- /.card__item -->
+                        <li class="card__item">• Укладка полов</li>
+                        <!-- /.card__item -->
+                        <li class="card__item">• Замена сантехники</li>
+                        <!-- /.card__item -->
+                        <li class="card__item">• Замена розеток и выключателей</li>
+                        <!-- /.card__item -->
+                        <li class="card__item">• Замена дверей</li>
+                        <!-- /.card__item -->
+                      </ul>
+                      <!-- /.card__list -->
+                      <strong class="card__pricetag wow zoomInUp">от 900 руб / м<sup>2</sup></strong>
+                      <!-- /.card__pricetag -->
+                    </div>
+                    <!-- /.card__text -->
+                  </div>
+                  <!-- /.card -->
+                </div>
+                <!-- /.col -->
+                <div class="col-30">
+                  <div class="card types__card">
+                    <img src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__image">
+                    <div class="card__text">
+                        <h3 class="card__title card__minmargin">Капитальный ремонт</h3>
+                        <!-- /.card__title -->
+                        <ul class="card__list card__minmargin">
+                          <li class="card__item">• Демонтаж старых покрытий</li>
+                          <!-- /.card__item -->
+                          <li class="card__item">• Поклейка обоев</li>
+                          <!-- /.card__item -->
+                          <li class="card__item">• Роспись стен и потолков</li>
+                          <!-- /.card__item -->
+                          <li class="card__item">• Укладка полов</li>
+                          <!-- /.card__item -->
+                          <li class="card__item">• Замена сантехники</li>
+                          <!-- /.card__item -->
+                          <li class="card__item">• Замена розеток и выключателей</li>
+                          <!-- /.card__item -->
+                          <li class="card__item">• Замена дверей</li>
+                          <!-- /.card__item -->
+                        </ul>
+                        <!-- /.card__list -->
+                        <strong class="card__pricetag wow zoomInUp">от 1800 руб / м<sup>2</sup></strong>
+                        <!-- /.card__pricetag -->
+                      </div>
+                      <!-- /.card__text -->
+                  </div>
+                  <!-- /.card -->
+                </div>
+                <!-- /.col -->
+                <div class="col-30">
+                  <div class="card types__card">
+                    <img src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__image">
+                    <div class="card__text">
+                        <h3 class="card__title card__minmargin">Дизайнерский ремонт</h3>
+                        <!-- /.card__title -->
+                        <ul class="card__list card__minmargin">
+                          <li class="card__item">• Демонтаж старых покрытий</li>
+                          <!-- /.card__item -->
+                          <li class="card__item">• Поклейка обоев</li>
+                          <!-- /.card__item -->
+                          <li class="card__item">• Роспись стен и потолков</li>
+                          <!-- /.card__item -->
+                          <li class="card__item">• Укладка полов</li>
+                          <!-- /.card__item -->
+                          <li class="card__item">• Замена сантехники</li>
+                          <!-- /.card__item -->
+                          <li class="card__item">• Замена розеток и выключателей</li>
+                          <!-- /.card__item -->
+                          <li class="card__item">• Замена дверей</li>
+                          <!-- /.card__item -->
+                        </ul>
+                        <!-- /.card__list -->
+                        <strong class="card__pricetag wow zoomInUp">от 4000 руб / м<sup>2</sup></strong>
+                        <!-- /.card__pricetag -->
+                      </div>
+                      <!-- /.card__text -->
+                  </div>
+                  <!-- /.card -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section types -->
+
+      <section class="section design">
+        <div class="container">
+            <div class="section-title design__section-title">
+                <h2 class="section-title__heading">Дизайн проект</h2>
+                <!-- /.section-title__heading -->
+                <div class="section-title__image">
+                  <img src="img/design.svg" alt="design">
+                </div>
+                <!-- /.section-title__image -->
+                <p class="section-title__description">Дизайн-проект не только помогает сделать ремонт вашей квартиры более современным, но и значительно удешевляет материалы и сокращает время ремонтных работ</p>
+                <!-- /.section-title__description -->
+              </div>
+              <!-- /.section-title -->
+          <div class="row">
+          <div class="col-30">
+            <div class="card design__card">
+              <img src="img/design/design-1.jpg" alt="Минимальный" class="card__image">
+              <div class="card__text">
+                  <h3 class="card__title card__maxmargin">Минимальный</h3>
+                  <!-- /.card__title -->
+                  <ul class="card__list card__maxmargin">
+                    <li class="card__item">• Измерительные чертежи</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">• Перепланировка</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">• Планировка мебели</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">• Сантехнический план</li>
+                  </ul>
+                  <!-- /.card__list -->
+                  <strong class="card__pricetag design__pricetag wow jackInTheBox">150 руб / м<sup>2</sup></strong>
+                  <!-- /.card__pricetag -->
+                </div>
+                <!-- /.card__text -->
+        </div>
+        <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        <div class="col-30">
+          <div class="card design__card">
+            <img src="img/design/design-2.jpg" alt="Стандартный" class="card__image">
+            <div class="card__text">
+                <h3 class="card__title card__minmargin">Стандартный</h3>
+                <!-- /.card__title -->
+                <ul class="card__list card__maxmargin">
+                  <li class="card__item">• Измерительные чертежи</li>
+                  <!-- /.card__item -->
+                  <li class="card__item">• Перепланировка</li>
+                  <!-- /.card__item -->
+                  <li class="card__item">• Планировка мебели</li>
+                  <!-- /.card__item -->
+                  <li class="card__item">• План потолков</li>
+                  <!-- /.card__item -->
+                  <li class="card__item">• План этажей</li>
+                  <!-- /.card__item -->
+                  <li class="card__item">• План электрики</li>
+                  <!-- /.card__item -->
+                  <li class="card__item">• План света</li>
+                </ul>
+                <!-- /.card__list -->
+                <strong class="card__pricetag design__pricetag wow jackInTheBox">400 руб / м<sup>2</sup></strong>
+                <!-- /.card__pricetag -->
+              </div>
+              <!-- /.card__text -->
+        </div>
+        <!-- /.card -->
+        </div>
+        <!-- /.col -->
+        <div class="col-30">
+          <div class="card design__card">
+            <img src="img/design/design-3.jpg" alt="Полный" class="card__image">
+            <div class="card__text">
+             <h3 class="card__title card__minmargin design__title">Полный</h3>
+              <!-- /.card__title -->
+              <ul class="card__list card__minmargin">
+                <li class="card__item">• Измерительные чертежи</li>
+                <!-- /.card__item -->
+                <li class="card__item">• Перепланировка</li>
+                <!-- /.card__item -->
+                <li class="card__item">• Планировка мебели</li>
+                <!-- /.card__item -->
+                <li class="card__item">• План потолков</li>
+                <!-- /.card__item -->
+                <li class="card__item">• План этажей</li>
+                <!-- /.card__item -->
+                <li class="card__item">• План электрики</li>
+                <!-- /.card__item -->
+                <li class="card__item">• План света</li>
+                <!-- /.card__item -->
+                <li class="card__item">• Стенные развертки</li>
+                <!-- /.card__item -->
+                <li class="card__item">• 3D визуализация</li>
+                <!-- /.card__item -->
+                <li class="card__item">• Смета на материалы</li>
+                <!-- /.card__item -->
+                <li class="card__item">• Выезд на подбор материалов</li>
+                <!-- /.card__item -->
+                <li class="card__item">• Выбор мебели</li>
+                <!-- /.card__item -->
+              </ul>
+              <!-- /.card__list -->
+            <strong class="card__pricetag design__pricetag wow jackInTheBox">900 руб / м<sup>2</sup></strong>
+            <!-- /.card__pricetag -->
+          </div>
+          <!-- /.card__text -->
+        </div>
+        <!-- /.card -->
+        </div>
+        <!-- /.col -->
+        </div>
+        <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section design -->
+    </main>
+    <footer class="footer section--dark">
+      <div class="container">
+        <div class="footer__wrap">
+          <h3 class="footer__title">Остались вопросы?</h3>
+          <form method="POST" class="form footer__form">
+            <div class="inrut-group footer__input-group">
+              <label for="user-name" class="label form__label label--light">Имя</label>
+              <input type="text" name="userName" class="input form__input footer__input input--light" id="footer-user-name" placeholder="Как вас зовут:">
+            </div>
+            <inrut-group class="footer__input-group">
+              <label for="user-phone" class="label form__label label--light">Телефон</label>
+              <input type="tel" name="userPhone" class="input form__input footer__input input--light" id="footer-user-phone" placeholder="Ваш номер телефона:">
+            </inrut-group>
+            <inrut-group class="footer__input-group footer__input-group--full-width">
+              <label for="user-question" class="label form__label label--light">Вопрос</label>
+              <input type="text" name="userQuestion" class="input form__input footer__input input--light" id="user-question" placeholder="Я хочу спросить:">
+            </inrut-group>
+            <div class="policy footer__policy">
+              <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
+              <label for="policy-checkbox" class="policy__label policy__label--center">я соглашаюсь с обработкой данных</label>
+            </div>
+            <!-- /.policy -->
+            <button class="button button--primary footer__button">Отправить</button> 
+          </form>
+          <!-- /.form footer__form-->
+        </div>
+        <!-- /.footer-wrap -->
+        <div class="map">
+          <div class="footer footer-title">
+            <h2 class="footer-title__heading">Ростов на дону, Торговый центр Plaza Прямой телефон +7 (999) 768 32 99</h2>
+            <!-- /.footer-title__heading -->
+            <div class="footer-title__image">
+              <img src="img/map-icon-left.svg" alt="map icon left">
+              <img src="img/map-icon-right.svg" alt="map icon right">
+            </div>
+            <!-- /.footer-title__image -->
+          <!-- /.footer-title -->
+        </div>
+        <div class="footer__map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6796bb16c55c0d252e03feacbcacdb31b54e5c1f1c9521ddf71f212fe645a83e&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script>
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.5551262319436!2d39.72099081587179!3d47.2448472208901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2skz!4v1577180955654!5m2!1sru!2skz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+        </div>
+        <!-- /.map footer__map -->
+        </div>
+        <!-- /.map -->
+      </div>
+      <!-- /.container -->
+      <div class="footer__menu">
+        <div class="container">
+          <div class="menu">
+            <div class="logo menu__logo">Repair Design Project</div>
+            <nav class="nav menu__nav">
+              <a href="#" class="nav__item">Главная</a>
+              <a href="#" class="nav__item">Проекты</a>
+              <a href="#" class="nav__item">Замер</a>
+              <a href="#" class="nav__item">Команда</a>
+              <a href="#" class="nav__item">Отзывы</a>
+              <a href="#" class="nav__item">Контакты</a>
+            </nav>
+            <div class="contacts menu__contacts">
+              <a href="tel:+79997683299" class="phone contacts__phone"
+                >+7 (999) 768-32-99</a
+              >
+              <button class="button contacts__button button--primary" data-toggle="modal">
+                Заказать звонок
+              </button>
+            </div>
+          </div>
+          <!-- /.menu -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.footer__menu -->
+    </footer>
+    <div class="modal">
+      <div class="modal__dialog">
+        <button class="modal__close"></button>
+        <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
+        <form method="POST" class="form modal__form">
+          <div class="input-group modal__input-group">
+            <label for="user-name" class="label form__label label--light">Имя</label>
+            <input type="text" name="userName" class="input form__input modal__input input--light" id="modal-user-name" placeholder="Как вас зовут:">
+          </div>
+          <div class="input-group modal__input-group">
+            <label for="user-phone" class="label form__label label--light">Телефон</label>
+            <input type="tel" name="userPhone" class="input form__input modal__input input--light" id="modal-user-phone" placeholder="Ваш номер телефона:">
+          </div>
+          <div class="input-group modal__input-group">
+            <label for="user-email" class="label form__label label--light">Email</label>
+            <input type="email" name="userEmail" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш email">
+          </div>
+          <div class="policy modal__policy">
+            <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
+            <label for="policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
+          </div>
+          <!-- /.policy -->
+          <button class="button button--primary modal__button">Отправить заявку</button> 
+        </form>
+        <!-- /.form modal__form-->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal-answer">
+      <div class="modal-answer__dialog">
+        <button class="modal-answer__close"></button>
+        <h3 class="modal-answer__title">Спасибо за заявку</h3>
+        <h4 class="modal-answer__text">Наш менеджер перезвонит вам в течение 15 минут</h4>
+      </div>
+    </div>
+    <!-- /.modal -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>
