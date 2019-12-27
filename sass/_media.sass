@@ -68,6 +68,10 @@
       max-width: 11rem
       width: 100%
 @media screen and ( max-width: 860px) //до 820px
+  .ymap-container
+    order: -1
+    height: 200px
+    margin-bottom: -1.6rem
   .footer
     background: $dark
     &__wrap
@@ -91,13 +95,6 @@
           margin: 0 0.6rem 0 0.9rem
     &__menu
       display: none
-    &__map
-      order: -1
-      margin-bottom: -1.6rem
-      ymaps
-        max-height: 18rem
-      // iframe
-      //   height: 18rem
   .input--dark
     color: $light 
     &::placeholder

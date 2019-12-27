@@ -43,12 +43,6 @@
   &__menu
     background-color: $dark
     padding: 4.28rem 0
-  &__map
-    text-align: center
-    max-width: 66.3rem 
-    width: 100%
-    margin: auto
-    margin-bottom: 4.6rem
   &-title
     text-transform: uppercase
     font-family: 'Yeseva One', cursive
@@ -71,3 +65,76 @@
 .map
   display: flex
   flex-wrap: wrap
+
+/* &#34;Блок-обертка&#34;, где мы задаем фоновое изображение скриншотом как на карте */
+.ymap-container
+  //text-align: center
+  max-width: 66.1rem 
+  width: 100%
+  height: 33.2rem
+  margin: auto
+  margin-bottom: 4.6rem
+  background: $dark url('../img/map/image7.1.jpg') no-repeat center / cover
+  position: relative
+  overflow: hidden
+  cursor: pointer
+  background-position: center center
+  background-size: cover
+  box-shadow: 0 0 2em  0 rgba($dark,.2)
+ 
+/* Блок, в котором появится Яндекс.Карта */
+#map-yandex 
+  position: relative
+  z-index: 7
+  width: 100%
+  height: 100% //my line
+  /* height: 20em; */
+  cursor: pointer
+  background-color: transparent
+
+/* Индикатор загрузки, который показывается до загрузки карты */
+.loader 
+  position: absolute
+  z-index: 15
+  top: -100%
+  left: 0
+  box-sizing: border-box
+  width: 100%
+  height: 100%
+  overflow: hidden
+  color: #000000
+  transition: opacity .7s ease
+  opacity: 0
+  background-color: rgba($dark,.55)
+ 
+.loader:after,
+.loader:before 
+  box-sizing: border-box
+ 
+.loader.is-active 
+  top: 0
+  opacity: 1
+ 
+.loader-default:after 
+  position: absolute
+  top: calc(50% - 24px)
+  left: calc(50% - 24px)
+  width: 48px
+  height: 48px
+  content: ''
+  animation: rotation 1s linear infinite
+  border: solid 8px $light
+  border-left-color: transparent
+  border-radius: 50%
+ 
+@keyframes rotation
+  from
+    transform: rotate(0)
+  to
+    transform: rotate(359deg)
+ 
+@keyframes blink
+  from
+    opacity: .5
+  to
+    opacity: 1

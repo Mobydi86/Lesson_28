@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Futura Book';
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff");
@@ -986,12 +987,6 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.28rem 0; }
-  .footer__map {
-    text-align: center;
-    max-width: 66.3rem;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 4.6rem; }
   .footer-title {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
@@ -1015,6 +1010,96 @@ img {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap; }
+
+/* &#34;Блок-обертка&#34;, где мы задаем фоновое изображение скриншотом как на карте */
+.ymap-container {
+  max-width: 66.1rem;
+  width: 100%;
+  height: 33.2rem;
+  margin: auto;
+  margin-bottom: 4.6rem;
+  background: #131313 url("../img/map/image7.1.jpg") no-repeat center/cover;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0 2em 0 rgba(19, 19, 19, 0.2); }
+
+/* Блок, в котором появится Яндекс.Карта */
+#map-yandex {
+  position: relative;
+  z-index: 7;
+  width: 100%;
+  height: 100%;
+  /* height: 20em; */
+  cursor: pointer;
+  background-color: transparent; }
+
+/* Индикатор загрузки, который показывается до загрузки карты */
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  -webkit-transition: opacity .7s ease;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(19, 19, 19, 0.55); }
+
+.loader:after,
+.loader:before {
+  box-sizing: border-box; }
+
+.loader.is-active {
+  top: 0;
+  opacity: 1; }
+
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  -webkit-animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
+  border: solid 8px #fff;
+  border-left-color: transparent;
+  border-radius: 50%; }
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@-webkit-keyframes blink {
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1; } }
+
+@keyframes blink {
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1; } }
 
 .modal-answer {
   opacity: 0;
@@ -1188,6 +1273,11 @@ img {
     width: 100%; } }
 
 @media screen and (max-width: 860px) {
+  .ymap-container {
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+    height: 200px;
+    margin-bottom: -1.6rem; }
   .footer {
     background: #131313; }
     .footer__wrap {
@@ -1215,12 +1305,6 @@ img {
           margin: 0 0.6rem 0 0.9rem; }
     .footer__menu {
       display: none; }
-    .footer__map {
-      -webkit-box-ordinal-group: 0;
-      order: -1;
-      margin-bottom: -1.6rem; }
-      .footer__map ymaps {
-        max-height: 18rem; }
   .input--dark {
     color: #fff; }
     .input--dark::-webkit-input-placeholder {
